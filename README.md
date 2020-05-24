@@ -13,3 +13,22 @@ Fix the permissions of files in git repositories. Sometimes when you copy the fo
 ```
 git diff -p -R --no-ext-diff --no-color | grep -E "^(diff|(old|new) mode)" --color=never  | git apply
 ```
+
+Devices
+-------
+
+#### Connect EasySMX ESM-9101 controller to Ubuntu
+
+Install XBox driver:
+
+```
+sudo apt-get install xboxdrv
+```
+
+Connect the controller receiver to the PC and run:
+
+```
+sudo xboxdrv --device-by-id 2f24:0091 --type xbox360 --device-name 'EasySMX ESM-9101' --silent
+```
+
+
